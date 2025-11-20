@@ -7,7 +7,7 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "jest",
     "test:watch": "jest --watch",
     "script:create-user": "ts-node src/prisma-examples/1-create-user.ts",
