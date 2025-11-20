@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "tsx src/index.ts",
-    "dev": "tsc --watch"
+    "start": "node api.js && tsx src/index.ts",
+    "dev": "node api.js && tsc --watch"
   },
   "devDependencies": {
     "@types/node": "22.19.0",

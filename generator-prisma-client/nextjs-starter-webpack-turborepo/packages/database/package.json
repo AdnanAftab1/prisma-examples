@@ -11,7 +11,7 @@
     "db:migrate:dev": "prisma migrate dev",
     "db:push": "prisma db push",
     "db:seed": "prisma db seed",
-    "dev": "tsup src/* --format esm --watch",
+    "dev": "node api.js && tsup src/* --format esm --watch",
     "format": "prisma format",
     "generate": "prisma generate",
     "prebuild": "npm run generate",

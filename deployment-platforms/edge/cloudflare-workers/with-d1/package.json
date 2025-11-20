@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
+    "dev": "node api.js && wrangler dev",
+    "start": "node api.js && wrangler dev",
     "test": "vitest"
   },
   "devDependencies": {

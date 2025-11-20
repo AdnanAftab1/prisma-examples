@@ -27,8 +27,8 @@ experimental/**/package-lock.json
 databases/**/package-lock.json
 experimental/**/*.db
 .next
-.vscode/
 .nuxt
 dev.db
 *.env*
 !.env.example
+config.bat
