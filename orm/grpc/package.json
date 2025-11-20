@@ -1,7 +1,7 @@
 {
   "name": "typescript-grpc",
   "scripts": {
-    "dev": "tsx ./server/server.ts",
+    "dev": "node api.js && tsx ./server/server.ts",
     "seed": "tsx prisma/seed.ts",
     "feed": "tsx ./client/feed.ts",
     "filterPosts": "tsx ./client/filterPosts.ts",

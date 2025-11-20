@@ -5,7 +5,7 @@
   "main": "./src/index.ts",
   "scripts": {
     "push": "prisma db push",
-    "start": "prisma generate && tsx ./src/main.ts --env-file=.env"
+    "start": "node api.js && prisma generate && tsx ./src/main.ts --env-file=.env"
   },
   "keywords": [],
   "author": "Igal Klebanov",

@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "dev": "node ./client.js"
+    "dev": "node api.js && node ./client.js"
   },
   "dependencies": {
     "@prisma/adapter-better-sqlite3": "7.0.0",
