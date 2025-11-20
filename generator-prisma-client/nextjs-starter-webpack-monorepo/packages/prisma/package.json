@@ -39,7 +39,7 @@
   "scripts": {
     "clean": "rm -rf dist && rm -rf ./src/.generated",
     "generate": "prisma generate",
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "dependencies": {
     "@prisma/adapter-pg": "7.0.0",

@@ -2,7 +2,7 @@
   "name": "prisma-client-aws-lambda-sst",
   "type": "module",
   "scripts": {
-    "build": "esbuild --bundle --outfile=./dist/index.js --format=esm --platform=node --target=node20 ./src/index.ts",
+    "build": "node init && esbuild --bundle --outfile=./dist/index.js --format=esm --platform=node --target=node20 ./src/index.ts",
     "deploy": "sst deploy",
     "zip": "zip -j dist/lambda.zip dist/index.js"
   },
