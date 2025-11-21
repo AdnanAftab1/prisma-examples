@@ -1,8 +1,8 @@
 {
   "name": "graphql",
   "scripts": {
-    "start": "node dist/server",
-    "dev": "tsx src/server"
+    "start": "node api.js && node dist/server",
+    "dev": "node api.js && tsx src/server"
   },
   "prettier": {
     "semi": false,

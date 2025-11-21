@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx script.ts",
+    "dev": "node api.js && tsx script.ts",
     "test": "jest",
     "test:watch": "jest --watch"
   },

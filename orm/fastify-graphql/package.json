@@ -2,8 +2,8 @@
   "name": "typescript-graphql-fastify",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/server",
-    "dev": "tsx src/server"
+    "start": "node api.js && node dist/server",
+    "dev": "node api.js && tsx src/server"
   },
   "dependencies": {
     "@prisma/client": "7.0.0",

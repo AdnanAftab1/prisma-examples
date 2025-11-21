@@ -2,9 +2,9 @@
   "name": "example-hackernews",
   "type": "module",
   "scripts": {
-    "dev": "vinxi dev",
+    "dev": "node api.js && vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start"
+    "start": "node api.js && vinxi start"
   },
   "dependencies": {
     "@prisma/client": "7.0.0",

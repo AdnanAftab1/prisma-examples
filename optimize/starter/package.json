@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run push --workspace=server",
-    "start": "npm start --workspace=server & npm start --workspace=client"
+    "start": "node api.js && npm start --workspace=server & npm start --workspace=client"
   },
   "author": "Igal Klebanov",
   "license": "ISC",

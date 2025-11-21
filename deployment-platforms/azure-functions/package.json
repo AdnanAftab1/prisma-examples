@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "func start"
+    "dev": "node api.js && func start"
   },
   "dependencies": {
     "@prisma/client": "6.9.0"
