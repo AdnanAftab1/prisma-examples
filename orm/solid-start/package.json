@@ -2,9 +2,9 @@
   "name": "example-bare",
   "type": "module",
   "scripts": {
-    "dev": "vinxi dev",
-    "build": "vinxi build",
-    "start": "vinxi start"
+    "dev": "node init && vinxi dev",
+    "build": "node init && vinxi build",
+    "start": "node init && vinxi start"
   },
   "dependencies": {
     "@prisma/client": "^7.0.0",

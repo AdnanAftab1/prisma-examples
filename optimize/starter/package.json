@@ -5,8 +5,8 @@
   "description": "An example project showing how to use Prisma Optimize",
   "main": "index.js",
   "scripts": {
-    "build": "npm run push --workspace=server",
-    "start": "npm start --workspace=server & npm start --workspace=client"
+    "build": "node init && npm run push --workspace=server",
+    "start": "node init && npm start --workspace=server & npm start --workspace=client"
   },
   "author": "Igal Klebanov",
   "license": "ISC",

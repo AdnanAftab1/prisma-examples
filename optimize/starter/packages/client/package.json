@@ -5,8 +5,8 @@
   "description": "Client for the Optimize Starter Project",
   "type": "module",
   "scripts": {
-    "start": "vite",
-    "build": "tsc && vite build",
+    "start": "node init && vite",
+    "build": "node init && tsc && vite build",
     "preview": "vite preview"
   },
   "author": "Igal Klebanov",

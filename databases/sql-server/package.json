@@ -6,7 +6,7 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/script.js",
+    "start": "node init && node ./src/script.js",
     "test": "jest",
     "test:watch": "jest --watch"
   },
