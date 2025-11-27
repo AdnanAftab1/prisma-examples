@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "react-router build",
-    "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
+    "dev": "node api.js && react-router dev",
+    "start": "node api.js && react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
@@ -17,7 +17,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-router": "7.6.3",
-    "pg": "^8.16.3"
+    "pg": "8.16.3"
   },
   "devDependencies": {
     "@react-router/dev": "7.6.3",
@@ -32,7 +32,7 @@
     "typescript": "5.8.3",
     "vite": "6.3.6",
     "vite-tsconfig-paths": "5.1.4",
-    "@types/pg": "^8.15.6"
+    "@types/pg": "8.15.6"
   },
   "packageManager": "pnpm@8.15.9+"
 }

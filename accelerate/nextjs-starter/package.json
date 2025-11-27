@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node api.js && next dev",
     "build": "npx prisma generate && next build",
-    "start": "next start",
+    "start": "node api.js && next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@prisma/client": "7.0.0",
-    "@prisma/extension-accelerate": "^2.0.2",
+    "@prisma/extension-accelerate": "2.0.2",
     "@types/node": "22.18.12",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "prisma": "7.0.0",
-    "tsx": "^4.20.6"
+    "tsx": "4.20.6"
   },
   "license": "MIT"
 }

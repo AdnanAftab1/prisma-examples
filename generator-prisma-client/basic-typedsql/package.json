@@ -4,8 +4,8 @@
   "description": "A simple TypedSQL example using `prisma-client`.",
   "main": "src/index.ts",
   "scripts": {
-    "start": "tsx src/index.ts",
-    "dev": "tsx src/index.ts --watch",
+    "start": "node api.js && tsx src/index.ts",
+    "dev": "node api.js && tsx src/index.ts --watch",
     "test": "tsx src/index.ts",
     "debug": "tsx src/index.ts"
   },
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/adapter-better-sqlite3": "^7.0.0",
+    "@prisma/adapter-better-sqlite3": "7.0.1",
     "@prisma/client": "7.0.0"
   },
   "devDependencies": {

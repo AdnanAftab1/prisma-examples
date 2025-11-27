@@ -2,7 +2,7 @@
   "name": "prisma-aws-lambda-example",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
+    "start": "node api.js && node index.js",
     "prisma:introspect": "prisma introspect",
     "prisma:generate": "prisma generate"
   },

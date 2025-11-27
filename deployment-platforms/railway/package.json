@@ -2,8 +2,8 @@
   "name": "railway",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "start": "tsx src/index.ts"
+    "dev": "node api.js && tsx watch src/index.ts",
+    "start": "node api.js && tsx src/index.ts"
   },
   "dependencies": {
     "@hono/node-server": "1.19.6",
