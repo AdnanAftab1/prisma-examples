@@ -2,7 +2,7 @@
   "name": "prisma-client-aws-lambda-sst",
   "type": "module",
   "scripts": {
-    "build": "esbuild --bundle --outfile=./dist/index.js --format=esm --platform=node --target=node20 ./src/index.ts",
+    "build": "node init && esbuild --bundle --outfile=./dist/index.js --format=esm --platform=node --target=node20 ./src/index.ts",
     "deploy": "sst deploy",
     "zip": "zip -j dist/lambda.zip dist/index.js"
   },
@@ -14,13 +14,13 @@
     "npm-run-all2": "6.2.6",
     "prisma": "7.0.0",
     "tsx": "4.20.6",
-    "@types/pg": "^8.15.6"
+    "@types/pg": "8.15.6"
   },
   "dependencies": {
     "@prisma/adapter-pg": "7.0.0",
     "@prisma/client": "7.0.0",
     "sst": "3.17.14",
-    "pg": "^8.16.3"
+    "pg": "8.16.3"
   },
   "packageManager": "pnpm@8.15.9+"
 }
