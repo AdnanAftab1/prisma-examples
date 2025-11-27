@@ -2,11 +2,11 @@
   "name": "typescript-graphql",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx src/server",
-    "start": "node dist/server",
+    "dev": "node init && tsx src/server",
+    "start": "node init && node dist/server",
     "clean": "rm -rf dist",
-    "build": "npm -s run clean && npm -s run generate && tsc && npm run build:schema",
-    "build:schema": "tsx src/schema/index.ts",
+    "build": "node init && npm -s run clean && npm -s run generate && tsc && npm run build:schema",
+    "build:schema": "node init && tsx src/schema/index.ts",
     "generate": "npm -s run generate:prisma",
     "generate:prisma": "prisma generate"
   },
