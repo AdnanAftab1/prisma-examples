@@ -5,10 +5,10 @@
     "bundle": "tsx ./esbuild.cjs.ts",
     "prisma:generate": "prisma generate",
     "clean": "rimraf ./src/generated ./dist",
-    "start:hono": "node -r dotenv/config ./dist/minimal.cjs",
-    "start:minimal": "node -r dotenv/config ./dist/minimal.cjs",
-    "dev:hono": "tsx -r dotenv/config ./src/hono.ts",
-    "dev:minimal": "tsx -r dotenv/config ./src/minimal.ts"
+    "start:hono": "node api.js && node -r dotenv/config ./dist/minimal.cjs",
+    "start:minimal": "node api.js && node -r dotenv/config ./dist/minimal.cjs",
+    "dev:hono": "node api.js && tsx -r dotenv/config ./src/hono.ts",
+    "dev:minimal": "node api.js && tsx -r dotenv/config ./src/minimal.ts"
   },
   "license": "MIT",
   "packageManager": "pnpm@10.21.0",
