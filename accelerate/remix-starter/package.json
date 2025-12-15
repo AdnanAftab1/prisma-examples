@@ -7,10 +7,10 @@
   "scripts": {
     "build": "remix vite:build",
     "deploy": "npm run ts-run tasks/validateConfig.ts && prisma generate && prisma db push && npm run build",
-    "dev": "remix vite:dev",
+    "dev": "node api.js && remix vite:dev",
     "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --cache",
     "prepare": "[ \"$NODE_ENV\" != \"production\" ] && husky || :",
-    "start": "remix-serve ./build/server/index.js",
+    "start": "node api.js && remix-serve ./build/server/index.js",
     "test:vitest": "vitest --run",
     "test:vitest:watch": "vitest",
     "ts-check": "tsc --project tsconfig.json --noEmit --skipLibCheck",

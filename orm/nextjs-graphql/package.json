@@ -6,9 +6,9 @@
   "license": "MIT",
   "author": "",
   "scripts": {
-    "dev": "next",
+    "dev": "node api.js && next",
     "build": "next build",
-    "start": "next start"
+    "start": "node api.js && next start"
   },
   "dependencies": {
     "@apollo/client": "3.13.8",

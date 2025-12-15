@@ -4,7 +4,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "tsx src/index.ts",
+    "dev": "node api.js && tsx src/index.ts",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --detectOpenHandles"
   },
   "prettier": {
