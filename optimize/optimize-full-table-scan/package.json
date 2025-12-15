@@ -2,7 +2,7 @@
   "name": "script",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx ./script.ts",
+    "dev": "node init && tsx ./script.ts",
     "copy-suffixes": "tsx ./copySuffixes.ts"
   },
   "dependencies": {
